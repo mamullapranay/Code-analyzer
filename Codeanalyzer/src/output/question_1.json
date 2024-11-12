@@ -1,0 +1,4 @@
+{
+  "question": "What functions does api.py have?",
+  "answer": "The \"api.py\" file has the following functions:\n\n1. download_pdf\n2. preprocess\n3. pdf_to_text\n4. text_to_chunks\n5. __init__\n6. fit\n7. __call__\n8. get_text_embedding\n9. load_recommender\n10. generate_text\n11. generate_answer\n12. load_openai_key\n13. ask_url\n14. ask_file"
+}
