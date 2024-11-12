@@ -12,16 +12,12 @@ tunable-labs-analysis/
 │   ├── mermaid_generator.py
 │   └── config.py
 ├── output/
-│   ├── question_1.json
-│   ├── question_2.json
-│   ├── question_3.json
-│   ├── question_4.json
-│   └── codebase_diagram.mmd
-├── tests/
-│   ├── __init__.py
-│   └── test_analyzers.py
-└── build/
-    └── my-languages.so
+    ├── question_1.json
+    ├── question_2.json
+    ├── question_3.json
+    ├── question_4.json
+    └── codebase_diagram.mmd
+
 
 ```
 
