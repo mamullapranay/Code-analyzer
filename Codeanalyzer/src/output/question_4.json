@@ -1,0 +1,4 @@
+{
+  "question": "How many function are related in both app.py and api.py",
+  "answer": "The codebase information shows that there are 14 functions in api.py and 1 function in app.py. So, there are a total of 15 functions in both files."
+}
