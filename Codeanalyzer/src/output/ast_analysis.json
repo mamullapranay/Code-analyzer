@@ -1,0 +1,756 @@
+{
+  "file_analysis": {
+    "api.py": {
+      "functions": [
+        {
+          "name": "download_pdf",
+          "parameters": [
+            "url",
+            "output_path"
+          ],
+          "decorators": [],
+          "body_length": 1,
+          "start_point": [
+            19,
+            0
+          ],
+          "end_point": [
+            20,
+            48
+          ]
+        },
+        {
+          "name": "preprocess",
+          "parameters": [
+            "text"
+          ],
+          "decorators": [],
+          "body_length": 3,
+          "start_point": [
+            23,
+            0
+          ],
+          "end_point": [
+            26,
+            15
+          ]
+        },
+        {
+          "name": "pdf_to_text",
+          "parameters": [
+            "path"
+          ],
+          "decorators": [],
+          "body_length": 7,
+          "start_point": [
+            29,
+            0
+          ],
+          "end_point": [
+            44,
+            20
+          ]
+        },
+        {
+          "name": "text_to_chunks",
+          "parameters": [
+            "texts"
+          ],
+          "decorators": [],
+          "body_length": 4,
+          "start_point": [
+            47,
+            0
+          ],
+          "end_point": [
+            64,
+            17
+          ]
+        },
+        {
+          "name": "__init__",
+          "parameters": [
+            "self"
+          ],
+          "decorators": [],
+          "body_length": 2,
+          "start_point": [
+            68,
+            4
+          ],
+          "end_point": [
+            70,
+            27
+          ]
+        },
+        {
+          "name": "fit",
+          "parameters": [
+            "self",
+            "data"
+          ],
+          "decorators": [],
+          "body_length": 6,
+          "start_point": [
+            72,
+            4
+          ],
+          "end_point": [
+            78,
+            26
+          ]
+        },
+        {
+          "name": "__call__",
+          "parameters": [
+            "self",
+            "text"
+          ],
+          "decorators": [],
+          "body_length": 3,
+          "start_point": [
+            80,
+            4
+          ],
+          "end_point": [
+            87,
+            28
+          ]
+        },
+        {
+          "name": "get_text_embedding",
+          "parameters": [
+            "self",
+            "texts"
+          ],
+          "decorators": [],
+          "body_length": 4,
+          "start_point": [
+            89,
+            4
+          ],
+          "end_point": [
+            96,
+            25
+          ]
+        },
+        {
+          "name": "load_recommender",
+          "parameters": [
+            "path"
+          ],
+          "decorators": [],
+          "body_length": 6,
+          "start_point": [
+            99,
+            0
+          ],
+          "end_point": [
+            107,
+            27
+          ]
+        },
+        {
+          "name": "generate_text",
+          "parameters": [
+            "openAI_key",
+            "prompt"
+          ],
+          "decorators": [],
+          "body_length": 2,
+          "start_point": [
+            110,
+            0
+          ],
+          "end_point": [
+            126,
+            18
+          ]
+        },
+        {
+          "name": "generate_answer",
+          "parameters": [
+            "question",
+            "openAI_key"
+          ],
+          "decorators": [],
+          "body_length": 8,
+          "start_point": [
+            129,
+            0
+          ],
+          "end_point": [
+            149,
+            17
+          ]
+        },
+        {
+          "name": "load_openai_key",
+          "parameters": [],
+          "decorators": [],
+          "body_length": 3,
+          "start_point": [
+            152,
+            0
+          ],
+          "end_point": [
+            158,
+            14
+          ]
+        },
+        {
+          "name": "ask_url",
+          "parameters": [],
+          "decorators": [],
+          "body_length": 4,
+          "start_point": [
+            162,
+            0
+          ],
+          "end_point": [
+            166,
+            48
+          ]
+        },
+        {
+          "name": "ask_file",
+          "parameters": [],
+          "decorators": [],
+          "body_length": 5,
+          "start_point": [
+            170,
+            0
+          ],
+          "end_point": [
+            178,
+            48
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SemanticSearch",
+          "methods": [
+            {
+              "name": "__init__",
+              "parameters": [
+                "self"
+              ],
+              "decorators": [],
+              "body_length": 2,
+              "start_point": [
+                68,
+                4
+              ],
+              "end_point": [
+                70,
+                27
+              ]
+            },
+            {
+              "name": "fit",
+              "parameters": [
+                "self",
+                "data"
+              ],
+              "decorators": [],
+              "body_length": 6,
+              "start_point": [
+                72,
+                4
+              ],
+              "end_point": [
+                78,
+                26
+              ]
+            },
+            {
+              "name": "__call__",
+              "parameters": [
+                "self",
+                "text"
+              ],
+              "decorators": [],
+              "body_length": 3,
+              "start_point": [
+                80,
+                4
+              ],
+              "end_point": [
+                87,
+                28
+              ]
+            },
+            {
+              "name": "get_text_embedding",
+              "parameters": [
+                "self",
+                "texts"
+              ],
+              "decorators": [],
+              "body_length": 4,
+              "start_point": [
+                89,
+                4
+              ],
+              "end_point": [
+                96,
+                25
+              ]
+            }
+          ],
+          "base_classes": [],
+          "decorators": [],
+          "attributes": []
+        }
+      ],
+      "imports": [
+        {
+          "type": "import_statement",
+          "module": "os",
+          "names": [],
+          "aliases": {},
+          "line": 0
+        },
+        {
+          "type": "import_statement",
+          "module": "re",
+          "names": [],
+          "aliases": {},
+          "line": 1
+        },
+        {
+          "type": "import_statement",
+          "module": "shutil",
+          "names": [],
+          "aliases": {},
+          "line": 2
+        },
+        {
+          "type": "import_statement",
+          "module": "urllib.request",
+          "names": [],
+          "aliases": {},
+          "line": 3
+        },
+        {
+          "type": "import_from_statement",
+          "module": "Path",
+          "names": [],
+          "aliases": {},
+          "line": 4
+        },
+        {
+          "type": "import_from_statement",
+          "module": "NamedTemporaryFile",
+          "names": [],
+          "aliases": {},
+          "line": 5
+        },
+        {
+          "type": "import_from_statement",
+          "module": "completion",
+          "names": [],
+          "aliases": {},
+          "line": 6
+        },
+        {
+          "type": "import_statement",
+          "module": "fitz",
+          "names": [],
+          "aliases": {},
+          "line": 7
+        },
+        {
+          "type": "import_statement",
+          "module": "",
+          "names": [],
+          "aliases": {},
+          "line": 8
+        },
+        {
+          "type": "import_statement",
+          "module": "openai",
+          "names": [],
+          "aliases": {},
+          "line": 9
+        },
+        {
+          "type": "import_statement",
+          "module": "",
+          "names": [],
+          "aliases": {},
+          "line": 10
+        },
+        {
+          "type": "import_from_statement",
+          "module": "UploadFile",
+          "names": [],
+          "aliases": {},
+          "line": 11
+        },
+        {
+          "type": "import_from_statement",
+          "module": "serving",
+          "names": [],
+          "aliases": {},
+          "line": 12
+        },
+        {
+          "type": "import_from_statement",
+          "module": "NearestNeighbors",
+          "names": [],
+          "aliases": {},
+          "line": 13
+        }
+      ],
+      "function_calls": [
+        {
+          "function": "",
+          "arguments": [
+            "url",
+            "output_path"
+          ],
+          "line": 20
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 24
+        },
+        {
+          "function": "",
+          "arguments": [
+            "text"
+          ],
+          "line": 25
+        },
+        {
+          "function": "",
+          "arguments": [
+            "path"
+          ],
+          "line": 30
+        },
+        {
+          "function": "range",
+          "arguments": [
+            "end_page"
+          ],
+          "line": 38
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 39
+        },
+        {
+          "function": "",
+          "arguments": [
+            "i"
+          ],
+          "line": 39
+        },
+        {
+          "function": "preprocess",
+          "arguments": [
+            "text"
+          ],
+          "line": 40
+        },
+        {
+          "function": "",
+          "arguments": [
+            "text"
+          ],
+          "line": 41
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 43
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 48
+        },
+        {
+          "function": "enumerate",
+          "arguments": [
+            "text_toks"
+          ],
+          "line": 51
+        },
+        {
+          "function": "range",
+          "arguments": [
+            "word_length"
+          ],
+          "line": 52
+        },
+        {
+          "function": "len",
+          "arguments": [
+            "words"
+          ],
+          "line": 52
+        },
+        {
+          "function": "len",
+          "arguments": [
+            "words"
+          ],
+          "line": 55
+        },
+        {
+          "function": "len",
+          "arguments": [
+            "chunk"
+          ],
+          "line": 56
+        },
+        {
+          "function": "len",
+          "arguments": [
+            "text_toks"
+          ],
+          "line": 57
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 61
+        },
+        {
+          "function": "",
+          "arguments": [
+            "chunk"
+          ],
+          "line": 61
+        },
+        {
+          "function": "",
+          "arguments": [
+            "chunk"
+          ],
+          "line": 63
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 69
+        },
+        {
+          "function": "",
+          "arguments": [
+            "data"
+          ],
+          "line": 74
+        },
+        {
+          "function": "min",
+          "arguments": [
+            "n_neighbors"
+          ],
+          "line": 75
+        },
+        {
+          "function": "len",
+          "arguments": [],
+          "line": 75
+        },
+        {
+          "function": "NearestNeighbors",
+          "arguments": [],
+          "line": 76
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 77
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 81
+        },
+        {
+          "function": "",
+          "arguments": [
+            "inp_emb"
+          ],
+          "line": 82
+        },
+        {
+          "function": "range",
+          "arguments": [
+            "batch"
+          ],
+          "line": 91
+        },
+        {
+          "function": "len",
+          "arguments": [
+            "texts"
+          ],
+          "line": 91
+        },
+        {
+          "function": "",
+          "arguments": [
+            "text_batch"
+          ],
+          "line": 93
+        },
+        {
+          "function": "",
+          "arguments": [
+            "emb_batch"
+          ],
+          "line": 94
+        },
+        {
+          "function": "",
+          "arguments": [
+            "embeddings"
+          ],
+          "line": 95
+        },
+        {
+          "function": "SemanticSearch",
+          "arguments": [],
+          "line": 102
+        },
+        {
+          "function": "pdf_to_text",
+          "arguments": [
+            "path"
+          ],
+          "line": 104
+        },
+        {
+          "function": "text_to_chunks",
+          "arguments": [
+            "texts"
+          ],
+          "line": 105
+        },
+        {
+          "function": "",
+          "arguments": [
+            "chunks"
+          ],
+          "line": 106
+        },
+        {
+          "function": "completion",
+          "arguments": [],
+          "line": 114
+        },
+        {
+          "function": "str",
+          "arguments": [
+            "e"
+          ],
+          "line": 125
+        },
+        {
+          "function": "recommender",
+          "arguments": [
+            "question"
+          ],
+          "line": 130
+        },
+        {
+          "function": "generate_text",
+          "arguments": [
+            "openAI_key",
+            "prompt"
+          ],
+          "line": 148
+        },
+        {
+          "function": "",
+          "arguments": [],
+          "line": 153
+        },
+        {
+          "function": "ValueError",
+          "arguments": [],
+          "line": 155
+        },
+        {
+          "function": "download_pdf",
+          "arguments": [
+            "url"
+          ],
+          "line": 163
+        },
+        {
+          "function": "load_recommender",
+          "arguments": [],
+          "line": 164
+        },
+        {
+          "function": "load_openai_key",
+          "arguments": [],
+          "line": 165
+        },
+        {
+          "function": "generate_answer",
+          "arguments": [
+            "question",
+            "openAI_key"
+          ],
+          "line": 166
+        },
+        {
+          "function": "Path",
+          "arguments": [],
+          "line": 171
+        },
+        {
+          "function": "NamedTemporaryFile",
+          "arguments": [],
+          "line": 172
+        },
+        {
+          "function": "",
+          "arguments": [
+            "tmp"
+          ],
+          "line": 173
+        },
+        {
+          "function": "Path",
+          "arguments": [],
+          "line": 174
+        },
+        {
+          "function": "load_recommender",
+          "arguments": [],
+          "line": 176
+        },
+        {
+          "function": "str",
+          "arguments": [
+            "tmp_path"
+          ],
+          "line": 176
+        },
+        {
+          "function": "load_openai_key",
+          "arguments": [],
+          "line": 177
+        },
+        {
+          "function": "generate_answer",
+          "arguments": [
+            "question",
+            "openAI_key"
+          ],
+          "line": 178
+        }
+      ],
+      "tree": 
